@@ -27,7 +27,7 @@ goWorkSpace
 
  > go install : 先编译导入的包文件，包文件编译完后再编译主程序，再将编译后的可执行文件放到bin目录下(`$`GOPATH/bin);如果编译的是某个依赖包，编译后的依赖放到pkg目录下(`$`GOPATH/pkg)。
 
->go get : git clone+go install (需要翻墙，一般直接clone)。
+>go get : git clone+go install。
 
 注意：
 1.import后面的最后一个元素应该是路径，而非包名。
