@@ -20,15 +20,15 @@ Docker 将集装箱的思想运用到软件打包上，为代码提供了一个�
 Docker 采用的是 Client/Server 架构。客户端向服务端发送请求，服务器负责构建、运行和分发容器。客户端和服务器可以在同一个 Host 上，客户端也可以通过 socket 或 REST API 与远程服务器通信。
 
 架构图中的几个核心组件：
-- docker 客户端：Client
+- docker 客户端：Client。
 最常用的 docker 客户端是 docker 命令。通过 docker 我们可以方便地在Host上构建和运行容器。
-- docker 服务器：Docker daemon 
+- docker 服务器：Docker daemon。
 Docker daemon 运行在 Docker host 上，负责创建、运行、监控容器，构建、储存镜像。默认配置下，Docker daemon 只能相应来自本地 Host 的客户端请求。
-- docker 镜像：Images
+- docker 镜像：Images。
 可以将 docker 的镜像看成**只读模板**。镜像可以用来创建容器。一个镜像可以创建很多容器。镜像和容器的关系类似于面向对象编程中的类与对象。
-- docker 容器：Container
+- docker 容器：Container。
 Docker 容器就是镜像的运行实例。它可以被启动、开始、停止、删除。每个容器都是相互隔离的、保证安全的平台。可以这么认为，镜像就是软件的构建和打包阶段，而容器则是启动和运行阶段。
-- docker 仓库：Registry
+- docker 仓库：Registry。
 Registry 是存放 Docker 镜像的仓库，Registry 分私有和公有两种。
 Docker Hub (https://hub.docker.com/) 是默认的 Registry ，由 Docker 公司维护，上面有数以万计的镜像可以下载和使用。当然，我们也可以创建自己私有的 Registry。
 ``docker pull``命令可以从 Registry 下载镜像。
