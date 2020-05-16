@@ -242,7 +242,4 @@ huanglingyun$ docker push hlyyy/miniproject:v1
 
 上面的内容可以总结为这一张图，包含了各个部分的关系。
 
-以上是关于 docker 的一些基础知识，深入学习还有网络通信、数据管理和容器平台技术等等。容器平台技术包括容器编排引擎、容器管理平台和基于容器的PaaS。
-
-![容器平台技术](https://upload-images.jianshu.io/upload_images/21203385-c47896b6228f4ad3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-
+以上是关于 docker 的一些基础知识，深入学习还有网络通信、数据管理和容器平台技术等等。
