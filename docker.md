@@ -147,6 +147,7 @@ Docker 执行 Dockerfile 的大致流程：
 ③执行类似``docker commit``操作提交一个新的镜像层
 ④docker 再基于刚提交的镜像运行一个新的容器
 ⑤执行 Dockerfile 中的下一条指令直到所有指令都执行完成
+
 由此可见，使用 Dockerfile 构建镜像，底层也是``docker commit``一层一层实现的。
 
 #### docker  build
