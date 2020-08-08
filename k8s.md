@@ -180,7 +180,7 @@ spec:
 **Taint 和 Toleration 相互配合，可以用来避免 pod 被分配到不合适的节点上。每个节点都可以有一个或多个污点，而对于不能容忍这些污点的pod，是不会被该节点接受的。如果将 Toleration 应用于 pod 上，则表示这些 pod 可以(但不要求)被调度到具有匹配 taint 的节点上。**
 
 ### 污点(Taint)
-通过```kubctl taint```命令可以给某一个node节点设置污点，node上设置了污点之后，pod可以拒绝 node 的调度，甚至可以将node上已经存在的pod驱逐出去。
+通过```kubectl taint```命令可以给某一个node节点设置污点，node上设置了污点之后，pod可以拒绝 node 的调度，甚至可以将node上已经存在的pod驱逐出去。
 
 污点可以用于集群节点迁移准备工作，通过打污点来使当前节点上的pod迁移出去。k8s 的master节点自带污点。
 
